@@ -1,0 +1,741 @@
+.header {
+  text-align: center;
+  font-size: 0.16rem;
+  background: #000;
+  color: #fff;
+  line-height: 0.5rem; }
+
+.section {
+  flex: 1;
+  -webkit-flex: 1;
+  width: 3.75rem;
+  background: url("../img/sellBg.png") center;
+  display: flex;
+  flex-direction: column; }
+  .section .snow {
+    position: absolute; }
+    .section .snow p {
+      width: 0.15rem;
+      height: 0.15rem;
+      border-radius: 50%;
+      background: #fff;
+      opacity: .8;
+      float: left;
+      margin: 0.1rem;
+      position: fixed;
+      top: 0;
+      z-index: 5; }
+  .section .swiper-container {
+    flex: 1;
+    -webkit-flex: 1;
+    width: 3.75rem; }
+
+.section .music {
+  position: absolute;
+  right: 0.45rem;
+  top: 0.1rem;
+  display: block; }
+
+.section .music img {
+  width: 0.35rem;
+  height: 0.35rem;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  animation: mRotate 2s linear infinite; }
+
+.section .music .mStar {
+  position: absolute;
+  width: 0.35rem;
+  height: 0.35rem;
+  z-index: 11;
+  display: block; }
+
+.section .music .mStop {
+  position: absolute;
+  width: 0.35rem;
+  height: 0.35rem;
+  z-index: 12;
+  display: block; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  width: 3.75rem; }
+  .content li {
+    position: relative !important;
+    width: 3.75rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%; }
+    .content li .position img {
+      width: 3.75rem;
+      position: relative; }
+    .content li .topImg img {
+      top: 0rem;
+      animation: topImg 1s linear; }
+    .content li .bottomImg img {
+      bottom: 0;
+      animation: bottomImg 1s linear; }
+    .content li .nextPage {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 1.7rem;
+      animation: nextPage 2s linear infinite; }
+      .content li .nextPage img {
+        width: 0.35rem;
+        display: block; }
+  .content li:nth-child(1) .centerContent {
+    flex: 1;
+    -webkit-flex: 1;
+    overflow: auto; }
+    .content li:nth-child(1) .centerContent .conOneFirstImg img {
+      width: 3.3rem;
+      margin: 0.2rem auto 0;
+      animation: titleImg2 2s linear;
+      opacity: 1; }
+    .content li:nth-child(1) .centerContent .conOneFirstTitle {
+      width: 3.75rem;
+      top: 1.3rem;
+      transform: translateY(1.1rem);
+      line-height: 0rem;
+      font-size: 0.24rem;
+      color: #69281f;
+      font-weight: 600;
+      animation: titleImg 2s linear;
+      text-align: center;
+      opacity: 1; }
+    .content li:nth-child(1) .centerContent .conOneSecondTitle {
+      font-size: 0.36rem;
+      font-weight: 600;
+      color: #662222;
+      text-align: center;
+      font-style: italic;
+      line-height: 0.6rem;
+      transform: preserve-3d;
+      animation: conOneSecondTitle 3s linear;
+      text-shadow: 5px 5px 5px #FF0000;
+      margin: 0.1rem 0; }
+      .content li:nth-child(1) .centerContent .conOneSecondTitle p {
+        width: 3.75rem; }
+    .content li:nth-child(1) .centerContent .conOneSecondImg img {
+      width: 3rem;
+      margin: 0 auto;
+      animation: oldMan 1s linear; }
+  .content li:nth-child(2) .centerContent {
+    flex: 1;
+    -webkit-flex: 1;
+    overflow: auto;
+    position: relative; }
+    .content li:nth-child(2) .centerContent .conOneFirstImg img {
+      width: 3.3rem;
+      margin: 0.2rem auto 0;
+      animation: titleImg2 2s linear;
+      opacity: 1; }
+    .content li:nth-child(2) .centerContent .conOneFirstTitle {
+      width: 3.75rem;
+      top: 1.3rem;
+      transform: translateY(1.1rem);
+      line-height: 0rem;
+      font-size: 0.24rem;
+      color: red;
+      font-weight: 600;
+      animation: titleImg 2s linear;
+      text-align: center;
+      opacity: 1; }
+    .content li:nth-child(2) .centerContent .conOneSecondImgTitle {
+      width: 3rem;
+      height: 2rem;
+      background: url("../img/75zhe.png") center center;
+      background-size: 3.3rem;
+      margin: 0.6rem auto 0;
+      font-size: 0.5rem;
+      color: #fff;
+      text-align: center;
+      text-shadow: 5px 5px 6px #000;
+      position: relative;
+      line-height: 2rem;
+      animation: allgoods 2s linear; }
+      .content li:nth-child(2) .centerContent .conOneSecondImgTitle img {
+        position: absolute;
+        width: 0.8rem;
+        left: -0.16rem;
+        top: -0.25rem;
+        animation: mRotate 2s linear; }
+    .content li:nth-child(2) .centerContent .conOneSecondImgTitle2 {
+      line-height: 0.6rem;
+      font-size: 0.24rem;
+      font-weight: 600;
+      position: absolute;
+      top: 2.7rem;
+      text-align: center;
+      text-indent: 0.15rem;
+      color: #e7a0c2;
+      letter-spacing: 0.3rem;
+      text-shadow: 4px 4px 3px #666;
+      width: 100%;
+      animation: allgoodsTitle 2s linear; }
+    .content li:nth-child(2) .centerContent .conOneSecondImgTitle3 {
+      line-height: 0.6rem;
+      font-size: 0.24rem;
+      font-weight: 600;
+      position: absolute;
+      top: 3.9rem;
+      text-align: center;
+      text-indent: 0.15rem;
+      color: #e7a0c2;
+      letter-spacing: 0.3rem;
+      text-shadow: 4px 4px 3px #666;
+      width: 100%;
+      animation: allgoodsTitle3 2s ease-in; }
+  .content li:nth-child(3) .centerContent {
+    flex: 1;
+    -webkit-flex: 1;
+    overflow: auto; }
+    .content li:nth-child(3) .centerContent .conOneFirstTitle {
+      position: absolute;
+      top: 0.5rem;
+      line-height: 0.8rem;
+      font-size: 0.24rem;
+      color: red;
+      font-weight: 600;
+      animation: thirdTitle 2s ease-in;
+      text-align: center;
+      opacity: 1;
+      border-bottom: 1px solid #FF0000;
+      letter-spacing: 0.1rem;
+      width: 2.85rem;
+      left: 0.45rem;
+      z-index: 2;
+      background: url("../img/sellBg.png") no-repeat; }
+    .content li:nth-child(3) .centerContent .conThirdFirstImg {
+      width: 2.8rem;
+      height: 1.3rem;
+      margin: 1rem auto 0;
+      background: url("../img/coupon.png") center center;
+      background-size: cover;
+      overflow: hidden; }
+      .content li:nth-child(3) .centerContent .conThirdFirstImg .conThirdFirstImgLeft {
+        float: left;
+        text-indent: 0.2rem; }
+        .content li:nth-child(3) .centerContent .conThirdFirstImg .conThirdFirstImgLeft p {
+          font-size: 0.24rem;
+          color: #fff;
+          line-height: 0.8rem; }
+        .content li:nth-child(3) .centerContent .conThirdFirstImg .conThirdFirstImgLeft span {
+          font-size: 0.16rem;
+          color: #999;
+          line-height: 0.16rem;
+          display: block; }
+      .content li:nth-child(3) .centerContent .conThirdFirstImg .conThirdFirstImgRight {
+        float: left;
+        margin-top: 0.15rem;
+        margin-left: 0.1rem;
+        width: 1.1rem;
+        text-align: center;
+        line-height: 1rem;
+        height: 1rem;
+        background: url("../img/couponClick.png") center center no-repeat;
+        background-size: cover;
+        font-size: 0.16rem;
+        color: #fff; }
+    .content li:nth-child(3) .centerContent .oneCoupon {
+      animation: coupon1 3s ease-in; }
+    .content li:nth-child(3) .centerContent .twoCoupon {
+      margin-top: 0.06rem;
+      animation: coupon2 2.2s ease-in; }
+    .content li:nth-child(3) .centerContent .threeCoupon {
+      margin-top: 0.06rem;
+      margin-bottom: 0.06rem;
+      animation: coupon3 1.8s ease-in; }
+  .content li:nth-child(4) .centerContent {
+    flex: 1;
+    -webkit-flex: 1;
+    overflow: auto; }
+    .content li:nth-child(4) .centerContent .conOneFirstTitle {
+      position: absolute;
+      top: 0.5rem;
+      line-height: 0.52rem;
+      padding-left: 0.1rem;
+      font-size: 0.24rem;
+      color: red;
+      font-weight: 600;
+      animation: thirdTitle 2s ease-in;
+      text-align: center;
+      opacity: 1;
+      letter-spacing: 0.1rem;
+      width: 0.5rem;
+      left: 0rem;
+      z-index: 2;
+      background: url("../img/bossBg.png") no-repeat;
+      background-size: cover; }
+    .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp {
+      height: 2.3rem; }
+      .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .conFourFirstBoxUpImg {
+        height: 1.5rem; }
+        .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .conFourFirstBoxUpImg img {
+          display: block;
+          border-radius: 50%;
+          width: 1.5rem;
+          margin: 0.2rem auto 0;
+          animation: conFourFirstBoxImg1 2s ease-in; }
+      .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .oldPrice {
+        line-height: 0.5rem;
+        font-size: 0.24rem;
+        color: #FF0000;
+        text-align: center;
+        overflow: hidden;
+        margin: 0 auto;
+        animation: conFourFirstBoxText3 2s linear;
+        position: relative; }
+        .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .oldPrice span {
+          position: absolute;
+          display: block;
+          animation: conFourFirstBoxLine 2s linear;
+          width: 1.05rem;
+          border: 1px solid #FF0000;
+          left: 1.35rem;
+          top: 0.24rem; }
+      .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .nowPrice {
+        display: flex;
+        width: 2rem;
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: row;
+        text-decoration: none; }
+        .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .nowPrice span {
+          float: left;
+          font-size: 0.2rem;
+          color: #fff;
+          background: red;
+          font-weight: 600;
+          line-height: 0.28rem;
+          animation: conFourFirstBoxText1 4s linear; }
+        .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxUp .nowPrice a {
+          float: left;
+          font-size: 0.16rem;
+          color: #fff;
+          background: red;
+          margin-left: 0.1rem;
+          line-height: 0.28rem;
+          flex: 1;
+          -webkit-flex: 1;
+          animation: conFourFirstBoxText1 4s linear; }
+    .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxDown h3 {
+      line-height: 0.5rem;
+      font-size: 0.16rem;
+      font-weight: normal;
+      text-align: center;
+      color: red; }
+    .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxDown .conFourFirstBoxDownOthers {
+      display: flex;
+      flex-direction: row;
+      -webkit-flex-direction: row; }
+      .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxDown .conFourFirstBoxDownOthers .one {
+        flex: 1;
+        -webkit-flex: 1;
+        overflow: hidden;
+        margin: 0 0.05rem; }
+        .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxDown .conFourFirstBoxDownOthers .one img {
+          width: 1rem;
+          margin: 0 auto;
+          height: 1.4rem;
+          animation: conFourFirstBoxImg2 3s ease-in; }
+        .content li:nth-child(4) .centerContent .conFourFirstBox .conFourFirstBoxDown .conFourFirstBoxDownOthers .one p {
+          text-align: center;
+          font-size: 0.16rem;
+          color: #107217;
+          line-height: 0.3rem;
+          margin-top: 0.1rem;
+          background: #FF0000;
+          animation: conFourFirstBoxText2 3s ease-out; }
+  .content li:nth-child(5) .centerContent {
+    flex: 1;
+    -webkit-flex: 1;
+    overflow: auto; }
+    .content li:nth-child(5) .centerContent .conOneFirstTitle {
+      position: absolute;
+      top: 0.5rem;
+      line-height: 0.52rem;
+      padding-left: 0.1rem;
+      font-size: 0.24rem;
+      color: red;
+      font-weight: 600;
+      animation: thirdTitle 2s ease-in;
+      text-align: center;
+      opacity: 1;
+      letter-spacing: 0.1rem;
+      width: 0.5rem;
+      left: 0rem;
+      z-index: 2;
+      background: url("../img/bossBg.png") no-repeat;
+      background-size: cover; }
+    .content li:nth-child(5) .centerContent .conFiveFirstBox {
+      margin: 0.35rem auto 0; }
+      .content li:nth-child(5) .centerContent .conFiveFirstBox .conFiveFirstBoxOne {
+        margin: 0.2rem 0; }
+        .content li:nth-child(5) .centerContent .conFiveFirstBox .conFiveFirstBoxOne a {
+          display: block;
+          height: 1.42rem; }
+          .content li:nth-child(5) .centerContent .conFiveFirstBox .conFiveFirstBoxOne a img {
+            margin: 0 auto;
+            width: 2.4rem;
+            animation: fifthPageImg 2s linear;
+            height: 1.42rem; }
+        .content li:nth-child(5) .centerContent .conFiveFirstBox .conFiveFirstBoxOne h3 {
+          width: 1rem;
+          font-size: 0.2rem;
+          line-height: 0.22rem;
+          text-align: center;
+          background: #FF0000;
+          color: white;
+          margin: 0.1rem auto;
+          animation: fifthPageText 3s linear; }
+        .content li:nth-child(5) .centerContent .conFiveFirstBox .conFiveFirstBoxOne p {
+          font-size: 0.16rem;
+          line-height: 0.22rem;
+          color: red;
+          text-align: center;
+          animation: fifthPageText 3s linear; }
+  .content li:nth-child(6) .centerContent {
+    flex: 1;
+    -webkit-flex: 1;
+    overflow: auto; }
+    .content li:nth-child(6) .centerContent .conOneFirstTitle {
+      position: absolute;
+      line-height: 0.8rem;
+      font-size: 0.24rem;
+      color: red;
+      font-weight: 600;
+      animation: thirdTitle 2s ease-in;
+      text-align: center;
+      opacity: 1;
+      border-bottom: 1px solid #FF0000;
+      letter-spacing: 0.1rem;
+      width: 2.85rem;
+      left: 0.45rem;
+      z-index: 2;
+      background: url("../img/sellBg.png") no-repeat; }
+    .content li:nth-child(6) .centerContent .conFiveFirstBox {
+      margin: 0.8rem auto 0; }
+      .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxOne {
+        margin: 0.2rem 0.375rem 0;
+        overflow: hidden;
+        display: flex;
+        animation: fifthPageText 3s linear; }
+        .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxOne a {
+          flex: 1;
+          -webkit-flex: 1;
+          overflow: hidden;
+          margin: 0 0.05rem;
+          display: flex;
+          flex-direction: column;
+          -webkit-flex-direction: column;
+          position: relative; }
+          .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxOne a img {
+            flex: 1;
+            -webkit-flex: 1;
+            margin: 0.05rem auto;
+            width: 1.5rem; }
+          .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxOne a p {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.3);
+            font-size: 0.14rem;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            color: #FF0000;
+            width: 100%; }
+      .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxTwo {
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        animation: fifthPageText 3s linear; }
+        .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxTwo a {
+          overflow: hidden;
+          position: relative;
+          margin: 0 auto; }
+          .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxTwo a img {
+            flex: 1;
+            -webkit-flex: 1;
+            margin: 0.05rem auto;
+            width: 2.9rem;
+            height: 1.8rem; }
+          .content li:nth-child(6) .centerContent .conFiveFirstBox .conFiveFirstBoxTwo a p {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.3);
+            font-size: 0.14rem;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            color: #FF0000;
+            width: 100%; }
+  .content li:nth-child(7) {
+    animation: lastAnimate 3s linear; }
+    .content li:nth-child(7) .centerContent {
+      flex: 1;
+      -webkit-flex: 1;
+      overflow: auto; }
+      .content li:nth-child(7) .centerContent .centerContentImg {
+        position: relative; }
+        .content li:nth-child(7) .centerContent .centerContentImg .one {
+          left: 1.5rem;
+          top: 0.3rem;
+          width: 1.6rem;
+          position: absolute;
+          transform: rotate(15deg);
+          z-index: 1; }
+        .content li:nth-child(7) .centerContent .centerContentImg .two {
+          position: absolute;
+          left: 0.6rem;
+          top: 0.3rem;
+          width: 1.02rem;
+          height: 0.8rem;
+          background: url("../img/say.png") center center no-repeat;
+          background-size: cover;
+          font-size: 0.14rem;
+          color: #fff;
+          text-align: center;
+          transform: rotate(-25deg);
+          line-height: 0.8rem;
+          z-index: 1; }
+        .content li:nth-child(7) .centerContent .centerContentImg .three img {
+          position: absolute; }
+        .content li:nth-child(7) .centerContent .centerContentImg .three img:nth-child(1) {
+          width: 2.55rem;
+          top: 1.3rem;
+          left: 0.6rem;
+          z-index: 0; }
+        .content li:nth-child(7) .centerContent .centerContentImg .three img:nth-child(2) {
+          width: 1.75rem;
+          top: 1.7rem;
+          left: 1rem; }
+      .content li:nth-child(7) .centerContent .shops {
+        font-size: 0.2rem;
+        display: block;
+        text-align: center;
+        width: 1.75rem;
+        color: white;
+        background: #FF0000;
+        border-radius: 0.05rem;
+        line-height: 0.36rem;
+        margin: 4.3rem auto 0.5rem; }
+
+.luckDraw {
+  animation: luckDraw 5s ease-in-out; }
+
+@keyframes mRotate {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes stop {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes titleImg {
+  0% {
+    opacity: 0;
+    font-size: 0.1rem; }
+  100% {
+    font-size: 0.24rem;
+    opacity: 1; } }
+@keyframes titleImg2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes oldMan {
+  0% {
+    width: 0rem; }
+  100% {
+    width: 3.3rem; } }
+@keyframes conOneSecondTitle {
+  0% {
+    transform: perspective(1000px) rotateY(0deg) translateX(-3.75rem); }
+  100% {
+    transform: perspective(1000px) rotateY(360deg) translateX(0rem); } }
+@keyframes topImg {
+  0% {
+    top: -0.5rem; }
+  100% {
+    top: 0rem; } }
+@keyframes bottomImg {
+  0% {
+    bottom: -0.5rem; }
+  100% {
+    bottom: 0rem; } }
+@keyframes allgoods {
+  0% {
+    transform: rotate(0deg);
+    width: 0;
+    font-size: 0; }
+  25% {
+    transform: rotate(360deg);
+    width: 1rem; }
+  50% {
+    transform: rotate(540deg);
+    width: 2rem; }
+  100% {
+    transform: rotate(720deg);
+    width: 3rem;
+    font-size: 0.5rem; } }
+@keyframes allgoodsTitle {
+  0% {
+    top: -1rem;
+    font-size: 0.1rem; }
+  100% {
+    top: 2.7rem;
+    font-size: 0.28rem; } }
+@keyframes allgoodsTitle3 {
+  0% {
+    left: -3rem; }
+  100% {
+    left: 0rem; }
+  90% {
+    left: -0.06rem;
+    letter-spacing: 0.2rem; }
+  80% {
+    left: 0rem; }
+  61% {
+    left: -0.2rem;
+    font-size: 0.28rem;
+    letter-spacing: 0rem; }
+  60% {
+    left: 0rem;
+    font-size: 0.24rem;
+    letter-spacing: 0.2rem; } }
+@keyframes thirdTitle {
+  0% {
+    top: -2rem; }
+  100% {
+    top: 0.5rem; }
+  60% {
+    top: 0.4rem;
+    font-size: 0.28rem; }
+  50% {
+    top: 0.5rem;
+    font-size: 0.28rem; }
+  49% {
+    font-size: 0.24rem; } }
+@keyframes coupon1 {
+  0% {
+    transform: translateY(-10rem); }
+  100% {
+    transform: translateY(0rem); }
+  90% {
+    transform: translateY(-0.1rem); }
+  79% {
+    width: 2.9rem; }
+  80% {
+    transform: translateY(0rem); } }
+@keyframes coupon2 {
+  0% {
+    transform: translateY(-10rem); }
+  100% {
+    transform: translateY(0rem); }
+  90% {
+    transform: translateY(-0.1rem); }
+  85% {
+    transform: translateY(0rem);
+    width: 2.9rem; } }
+@keyframes coupon3 {
+  0% {
+    transform: translateY(-10rem); }
+  100% {
+    transform: translateY(0rem); }
+  90% {
+    transform: translateY(-0.1rem); }
+  88% {
+    transform: translateY(0rem);
+    width: 2.9rem; } }
+@keyframes conFourFirstBoxImg1 {
+  0% {
+    border-radius: 100%;
+    width: 0; }
+  100% {
+    border-radius: 50%;
+    width: 1.5rem; }
+  90% {
+    width: 1.3rem; }
+  80% {
+    width: 1.5rem; } }
+@keyframes conFourFirstBoxImg2 {
+  0% {
+    transform: rotate(0);
+    width: 0;
+    height: 0; }
+  100% {
+    transform: rotate(360deg);
+    width: 1rem;
+    height: 1.4rem; } }
+@keyframes conFourFirstBoxText1 {
+  0% {
+    color: transparent;
+    background: transparent; }
+  50% {
+    color: transparent;
+    background: transparent; }
+  100% {
+    color: #fbffff;
+    background: red; } }
+@keyframes conFourFirstBoxText2 {
+  0% {
+    color: #FF0000;
+    background: transparent; }
+  100% {
+    color: #107217;
+    background: red; } }
+@keyframes conFourFirstBoxText3 {
+  0% {
+    font-size: 0.1rem; }
+  100% {
+    font-size: 0.24rem; } }
+@keyframes conFourFirstBoxLine {
+  0% {
+    left: -2rem; }
+  50% {
+    left: -2rem; }
+  100% {
+    left: 1.4rem; } }
+@keyframes fifthPageImg {
+  0% {
+    height: 0; }
+  100% {
+    height: 1.42rem; } }
+@keyframes fifthPageText {
+  0% {
+    opacity: 0; }
+  60% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes luckDraw {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(900deg); } }
+@keyframes lastAnimate {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes nextPage {
+  0% {
+    opacity: 0;
+    bottom: 0.5rem; }
+  25% {
+    opacity: .5; }
+  80% {
+    opacity: 1; }
+  100% {
+    bottom: 0.75rem;
+    opacity: 0; } }
